@@ -1,0 +1,15 @@
+print('casting form integer to string')
+integer_variable=5
+integer_variable_casted_to_string=str(integer_variable)
+print(type(integer_variable_casted_to_string))
+print(integer_variable)
+print('******')
+print('casting form integer to float')
+integer_variable_casted_to_float=float(integer_variable)
+print(type(integer_variable_casted_to_float))
+print('*****')
+print('casting from float to integer')
+integer_variable_casted_to_integer=int(integer_variable_casted_to_float)
+print(type(integer_variable_casted_to_integer))
+print(integer_variable_casted_to_integer)
+
