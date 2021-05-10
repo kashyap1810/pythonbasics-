@@ -17,7 +17,7 @@ class Employee:
         else:
             print('wrong value inserted')
 
-        print('the calculated salary is : {}'.format(calculated_salary))
+        print('the calculated salary is %s '%calculated_salary)
         return calculated_salary
 
     def candidate_bonus(self, the_calculated_salary):
@@ -25,8 +25,8 @@ class Employee:
         if 'front end' in self.position_name:
             salary_with_bonus = the_calculated_salary * 1.1
         if self.years_of_experience > 2:
-            salary_with_bonus = the_calculated_salary * 0.2
-        print('the bonus for the position is : %s ' % (self.position_name, salary_with_bonus))
+            salary_with_bonus = the_calculated_salary * 1.2
+        print('the bonus for the position %s is : %s '%(self.position_name,salary_with_bonus))
 
 
 class programmer(Employee):
@@ -47,7 +47,7 @@ junior_python_programmer.print_data()
 
 # excuting methods
 
-senior_dev = programmer(5, 'front end', 'ravi')
+senior_dev = programmer(6, 'front end', 'ravi')
 calculated_salary_value = senior_dev.calculate_salary
 senior_dev.candidate_bonus(calculated_salary_value)
 senior_dev.print_data()
